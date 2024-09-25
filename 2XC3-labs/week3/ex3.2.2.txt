@@ -1,0 +1,20 @@
+Question a: The di.sh first initiates the shell script by #!/bin/bash then 
+executes 1 command line argument inputted by $1.
+
+./di.sh "ls -l" 
+The above command makes ls -l only one input argument despite the blank space
+, since wrapping with double quotation marks are interpreted.
+
+Question b:
+initial guess: 
+(variable A set as a)
+(variable B set as 1)
+(variable C set as [a][1]C = a1C)
+(variable D set as [1]*10 = 1*10, since all strings)
+echo a 1 a1C 1*10
+
+initial print:
+a 1 a1C 1*10
+
+answer print:
+a 1 a1C 1*10
