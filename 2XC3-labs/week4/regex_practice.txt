@@ -1,0 +1,79 @@
+1. regex expressions
+REGEX:
+	// Matches
+	REGEX
+	REGEXREGEX
+	REGEXREGEXREGEX
+	// Don't Match
+	regex
+	ReGex
+	rEgEx
+^re*ge+x:
+	rgex
+	reeeeeeeeeeeeegex
+	reeeeeeeegeeeeeeex
+	rgx
+	regx
+	aregex
+[^regex]:
+	a
+	b
+	c
+	r
+	g
+	e
+(reg){0,2}ex:
+	ex
+	regex
+	regregex
+	regregregx
+	regregregregx
+	regregregregregx
+re?g?e?x:
+	rx
+	regex
+	rgx
+	reeex
+	rggx
+	reeggeex
+^(reg|REG)(ex)\2\1$:
+	// Match
+	regexexreg
+	REGexexREG
+	// No Match
+	REGexexreg
+	regex
+	REGex
+2. Matching regex expressions only
+a(ab)*a:
+	aaba
+	aabababa
+ab+c:
+	abc
+a.[bc]+:
+	abc
+	azc
+	abbbbbbbb
+	abcbcbcbc
+	asccbbbbcbcccc
+abc|xyz:
+	abc
+	xyz
+[a-z]+[\.\?!]:
+	swamping.
+	undulate?
+[a-zA-Z]*[^,]=:
+	Brittle =
+	Other.=
+[a-z][\.\?!]\s+[A-Z]:
+	g.  H
+	i? J
+<[^>]+>:
+	<an xml tag>
+	<opentag>
+	<closetag>
+	</closetag>
+	<with attribute=”77”>
+(very )+(important )?(tall|well-dressed) person:
+	very very well-dressed person
+
