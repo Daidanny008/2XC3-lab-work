@@ -1,0 +1,12 @@
+I think allowing side effects but limiting it to an operator 
+helps to minimize the errors it cause, while allowing programmers
+to use it as a feature. It allows the modification of multiple
+variables in-place in one function, instead of multiple functions
+or multiple returns and assignments, which can be confusing.
+Thus, reducing program complexity and possibly improving readibility.
+However, even if used intentionally, binding certain variables
+to other non-local variables can still cause semantic errors,
+due to unexpectedly changed or not changed variable values. Overall, 
+I think it is reasonable for some languages to attempt to eliminate 
+all side effects regardless of their use, but keeping it as an option 
+with an operator can be beneficial in some cases.
