@@ -27,19 +27,54 @@ int main() {
     puts("TESTING FOR FIND POINTER:\n");
 
     // two occurence
-    printf("%d\n\n", find_pointer(array, size, 5));
+    //printf("%d\n\n", find_pointer(array, size, 5));
+    int *a = find_pointer(array, size, 5);
+    if (a != NULL) {
+        printf("Key %d FOUND %d\n", 5, *a);
+    }
+    else {
+        printf("Key %d NOT FOUND\n", 5);
+    }
 
     // more than 1 digit
-    printf("%d\n\n", find_pointer(array, size, 11));
+    //printf("%d\n\n", find_pointer(array, size, 11));
+    a = find_pointer(array, size, 11);
+    if (a != NULL) {
+        printf("Key %d FOUND %d\n", 11, *a);
+    }
+    else {
+        printf("Key %d NOT FOUND\n", 11);
+    }
 
     // end value
-    printf("%d\n\n", find_pointer(array, size, 6));
+    //printf("%d\n\n", find_pointer(array, size, 6));
+    a = find_pointer(array, size, 6);
+    if (a != NULL) {
+        printf("Key %d FOUND %d\n", 6, *a);
+    }
+    else {
+        printf("Key %d NOT FOUND\n", 6);
+    }
 
     // non-existent value
-    printf("%d\n\n", find_pointer(array, size, -6));
+    //printf("%d\n\n", find_pointer(array, size, -6));
+    a = find_pointer(array, size, -6);
+    if (a != NULL) {
+        printf("Key %d FOUND %d\n", -6, *a);
+    }
+    else {
+        printf("Key %d NOT FOUND\n", -6);
+    }
 
     // first value
-    printf("%d\n\n", find_pointer(array, size, 0));
+    //printf("%d\n\n", find_pointer(array, size, 0));
+    a = find_pointer(array, size, 0);
+    if (a != NULL) {
+        printf("Key %d FOUND %d\n", 0, *a);
+    }
+    else {
+        printf("Key %d NOT FOUND\n", 0);
+    }
 
     puts("TESTING FOR COUNT:\n");
 

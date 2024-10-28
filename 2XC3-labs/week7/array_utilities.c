@@ -18,25 +18,13 @@ int *find_pointer(int array[], int size, int key) {
 
     for (int *a = array; a < size + array; a++) {
         if (*a == key) {
-            printf("Key %d FOUND %d\n", key, *a);
+            //printf("Key %d FOUND %d\n", key, *a);
             return a;
         }
     }
 
-    printf("Key %d NOT FOUND\n", key);
+    //printf("Key %d NOT FOUND\n", key);
     return NULL;
-
-    /*
-    for (int i = 0; i < size; i++) {
-        if (a[i] == key) {
-            printf("Key %d FOUND %d\n", key, a[i]);
-            return &a[i];
-        }
-    }
-
-    printf("Key %d NOT FOUND\n", key);
-    return NULL;
-    */
 
 }
 
