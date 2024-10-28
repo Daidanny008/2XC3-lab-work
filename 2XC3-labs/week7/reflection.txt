@@ -1,0 +1,10 @@
+I think the advantage to pointer arithmetic is the benefit of using
+the value of an array, almost like an index. Being able to add to a
+pointer and index the next value is much easier than calculating
+with indices. However, it also brings a disadvantage that indexing 
+is less clear, and much more easier to cause out of bound errors,
+like segmentation fault accessing and leaking extra memory.
+
+I would say I prefer indexing over pointer arithmetic, since I have
+been using indexing in much more other languages, and it is overall
+a higher level of control of the array data.
