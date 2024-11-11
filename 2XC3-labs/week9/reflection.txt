@@ -1,0 +1,26 @@
+a) 
+It is generally a good idea to remove function calls from a program
+since it helps to optimize the runtime of the program. However, replacing
+functions with macros or the fundamental arithmetic may be confusing at
+a high level, especially working with other teammates. Additionally, it 
+may be difficult to replace more sophisticated functions.
+
+b) 
+I think in comparison, replacing function calls with macros is better than
+replacing with the equivalent code. Since it helps to optimize the program
+while still having a high-level function-like structure, improving the
+readability of the code. Although, it may not help for multi-line functions,
+where a function or equivalent is more readable.
+
+c) 
+Improving the algorithm yielded better performance improvement at around 
+0.1354 seconds with gprof flag and 0.0517 seconds without, vs more than 4 
+seconds without gprof in replacing with macros or equivalent code. In the 
+gprof report, the ratio of checkfactor was 57.67% in primes.txt, but only
+33.33% in primes4.txt, which drastically reduced the program complexity
+and runtime.
+
+d)
+If the algorithm is extremely difficult to optimize further, and there exists
+functions where a replacement of it helps optimize the program, while not 
+causing confusion.
